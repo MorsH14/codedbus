@@ -6,7 +6,7 @@ import { FaArrowUp } from 'react-icons/fa'
 
 const Button = styled.button`
   position: fixed;
-  bottom: 24px;
+  bottom: 274px;
   right: 24px;
   background-color: #362f8f;
   color: white;

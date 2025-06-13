@@ -25,7 +25,7 @@ export default function Homepage() {
           style={{ width: '100%', height: 'auto' }} // makes it responsive
         />
         <LearnBtnWrapper>
-          <LinkButton label="Learn More" href="/about" />
+          <LinkButton label="Learn More" href="/exam-desk" />
         </LearnBtnWrapper>
       </HomePageWrapper>
 

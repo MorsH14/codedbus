@@ -10,7 +10,9 @@ import {
   HeaderLinksWrapper,
   NavLink,
   MobileMenuIcon,
+  HideOnMobile,
 } from './Header.style';
+import { Box } from '@mui/material';
 
 const HeaderLink = [
   { label: 'Exam Desk', href: '/exam-desk' },
@@ -35,17 +37,35 @@ export default function Header() {
       </MobileMenuIcon>
 
       <HeaderLinksWrapper isMobileOpen={isMobileOpen}>
-        {HeaderLink.map((link, index) => (
-          <Link href={link.href} key={index} passHref>
-            <NavLink
-              isActive={currentPath === link.href}
-              onClick={() => setIsMobileOpen(false)} // close menu on click
-            >
-              {link.label}
-            </NavLink>
-          </Link>
-        ))}
+        {HeaderLink.map((link, index) => {
+          let isActive = currentPath === link.href;
+
+          if (link.href === '/exam-desk') {
+            isActive = ['/exam-desk', '/download'].includes(currentPath);
+          }
+
+          if (link.href === '/about') {
+            isActive = ['/about', '/team'].includes(currentPath);
+          }
+          if (link.href === '/support') {
+            isActive = ['/support', '/contact'].includes(currentPath);
+          }
+
+          return (
+            <Link href={link.href} key={index} passHref>
+              <NavLink
+                isActive={isActive}
+                onClick={() => setIsMobileOpen(false)}
+              >
+                {link.label}
+              </NavLink>
+            </Link>
+          );
+        })}
       </HeaderLinksWrapper>
+        <HideOnMobile>
+      <Box width={'2'}></Box>
+        </HideOnMobile>
     </HeaderWrapper>
   );
 }

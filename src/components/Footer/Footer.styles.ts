@@ -61,13 +61,13 @@ export const FooterText = styled.p`
 interface SocialIconsProps {
   center?: boolean;
 }
-
 export const SocialIcons = styled.div<SocialIconsProps>`
   display: flex;
-  justify-content: ${({ center }) => (center ? "center" : "flex-start")};
+  justify-content: ${({ center }) => (center ? 'center' : 'flex-start')};
   gap: 10px;
   flex-wrap: wrap;
   margin-top: 16px;
+  width: 100%;
 
   a {
     color: white;
@@ -76,5 +76,9 @@ export const SocialIcons = styled.div<SocialIconsProps>`
     @media (max-width: 400px) {
       font-size: 16px;
     }
+  }
+
+  @media (max-width: 768px) {
+    justify-content: center; /* Always center on mobile */
   }
 `;

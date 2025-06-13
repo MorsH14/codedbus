@@ -15,7 +15,9 @@ export default function Footer() {
   return (
     <FooterWrapper>
       <Column>
+        <Link href={'/'}>
         <Logo src="/assets/logo.jpg" alt="Codedbus Logo"  />
+        </Link>
         <FooterText>Codedbus Information Technology Limited</FooterText>
         <FooterText>Company Registration Number : 8220419</FooterText>
         <SocialIcons>
@@ -29,19 +31,19 @@ export default function Footer() {
 
       <Column>
         <FooterTitle>Our Products</FooterTitle>
-        <Link href="#">Exam Desk</Link>
+        <Link href="/exam-desk">Exam Desk</Link>
       </Column>
 
       <Column>
         <FooterTitle>Company</FooterTitle>
-        <Link href="#">About Codedbus Information Technology Limited</Link>
-        <Link href="#">Meet Our Team</Link>
+        <Link href="/about">About Codedbus Information Technology Limited</Link>
+        <Link href="/team">Meet Our Team</Link>
       </Column>
 
       <Column>
         <FooterTitle>Support</FooterTitle>
-        <Link href="#">Product Support</Link>
-        <Link href="#">Contact Us</Link>
+        <Link href="/support">Product Support</Link>
+        <Link href="/contact">Contact Us</Link>
       </Column>
     </FooterWrapper>
   );

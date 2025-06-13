@@ -10,7 +10,7 @@ import {
 import LinkButton from '@/components/Button/Button';
 
 const SupportPage = () => {
-  const items = Array(6).fill('Exam Desk');
+  const items = Array(1).fill('Exam Desk');
 
   return (
     <Box sx={{ p: 4 }}>
