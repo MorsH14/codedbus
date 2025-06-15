@@ -158,6 +158,7 @@ export default function SubmitRequestForm() {
               <option value="">Choose issue type*</option>
               <option value="Technical Support">Technical Support</option>
               <option value="Customer Service">Customer Service</option>
+              <option value="Payment Issue">Payment Issue</option>
             </Select>
 
             <Input type="email" name="email" placeholder="Your email address*" required />

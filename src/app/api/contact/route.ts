@@ -13,6 +13,8 @@ export async function POST(req: Request) {
     );
   }
 
+  const combinedSubject = `${issue}: ${subject}`;
+
   try {
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -25,14 +27,14 @@ export async function POST(req: Request) {
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER,
-      subject: `Support Request: ${subject}`,
+      subject: combinedSubject,
       html: `
-    <p><strong>Product:</strong> ${product}</p>
-    <p><strong>Issue:</strong> ${issue}</p>
-    <p><strong>From:</strong> ${email}</p>
-    <p><strong>Subject:</strong> ${subject}</p>
-    <p><strong>Description:</strong><br>${description}</p>
-  `,
+        <h2>New Support Request</h2>
+        <p><strong>Product:</strong> ${product || "N/A"}</p>
+        <p><strong>From:</strong> ${email}</p>
+        <p>${combinedSubject}</p>
+        <p><strong>Description:</strong> ${description || "N/A"}</p>
+      `,
     });
 
     return NextResponse.json(
