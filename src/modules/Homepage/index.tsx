@@ -33,7 +33,7 @@ export default function Homepage() {
         <TextAboardWrapper>
           <HeaderResize>ALL Aboard!</HeaderResize>
           <AboardBtnWrapper>
-            <LinkButton label="Meet The Coodedbus Team" href="/about" />
+            <LinkButton label="Meet The Codedbus Team" href="/about" />
           </AboardBtnWrapper>
         </TextAboardWrapper>
 

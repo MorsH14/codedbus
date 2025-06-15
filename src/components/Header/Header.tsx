@@ -29,7 +29,7 @@ export default function Header() {
   return (
     <HeaderWrapper>
       <Link href="/">
-        <Image src="/assets/logo.jpg" alt="logo" width={100} height={50} />
+        <Image src="/assets/header.png" alt="logo" width={100} height={50} />
       </Link>
 
       <MobileMenuIcon onClick={toggleMenu}>

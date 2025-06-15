@@ -16,7 +16,7 @@ export default function Footer() {
     <FooterWrapper>
       <Column>
         <Link href={'/'}>
-        <Logo src="/assets/logo.jpg" alt="Codedbus Logo"  />
+        <Logo src="/assets/footer.png" alt="Codedbus Logo"  />
         </Link>
         <FooterText>Codedbus Information Technology Limited</FooterText>
         <FooterText>Company Registration Number : 8220419</FooterText>

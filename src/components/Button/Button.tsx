@@ -14,7 +14,7 @@ interface LinkButtonProps {
 
 const StyledLink = styled.a<{ width?: string; bgColor?: string; textColor?: string }>`
   display: inline-block;
-  background-color: ${({ bgColor }) => bgColor || '#3b2d93'};
+  background-color: ${({ bgColor }) => bgColor || '#001A59'};
   color: ${({ textColor }) => textColor || 'white'};
   font-weight: bold;
   text-align: center;

@@ -8,7 +8,7 @@ const Button = styled.button`
   position: fixed;
   bottom: 274px;
   right: 24px;
-  background-color: #362f8f;
+  background-color: #001A59;
   color: white;
   border: none;
   padding: 12px;
@@ -22,7 +22,7 @@ const Button = styled.button`
   }
 
   &:hover {
-    background-color: #2c2675;
+    background-color: #001A59;
   }
 
   @media (max-width: 250px) {
