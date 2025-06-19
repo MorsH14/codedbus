@@ -40,7 +40,7 @@ const contactItems: ContactItem[] = [
     title: 'Chat with us on WhatsApp',
     description: 'Start a chat session with us',
     action: 'Start Chat',
-    href: 'https://wa.me/2349167989433',
+    href: 'https://wa.me/+2349167989433',
     iconColor: '#25D366',
   },
   {

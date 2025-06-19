@@ -1,116 +1,84 @@
 'use client';
 
 import styled from '@emotion/styled';
+import Link from 'next/link';
 
 export const Section = styled.section`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 60px 40px;
-  gap: 40px;
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 80%;
+  margin: 0 auto;
+`;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    padding: 40px 20px;
-    text-align: center;
-  }
+export const Heading = styled.h1`
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 30px;
 
-  @media (max-width: 400px) {
-    padding: 20px 10px;
-    gap: 20px;
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
   }
 `;
 
-export const ImageWrapper = styled.div`
-  flex: 1;
+export const CenteredImage = styled.div`
   display: flex;
   justify-content: center;
-  background-color: white;
-  padding: 40px;
+  margin-bottom: 40px;
 
   img {
-    width: 100%;
     max-width: 300px;
     height: auto;
   }
-
-  @media (max-width: 400px) {
-    padding: 20px;
-  }
 `;
 
-export const Content = styled.div`
-  flex: 1;
+export const ButtonRow = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 30px;
 
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 12px;
-    text-align: center;
-  }
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 330px;
 
-  h2 {
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin-bottom: 16px;
-    text-align: center;
-  }
-
-  hr {
-    border: none;
-    border-bottom: 2px solid #362f8f;
-    width: 100%;
-    max-width: 300px;
-    margin: 16px 0;
-  }
-
-  p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-
-  @media (max-width: 400px) {
-    h1 {
-      font-size: 1.6rem;
-    }
-
-    h2 {
-      font-size: 1rem;
-    }
-
-    p {
-      font-size: 0.9rem;
-    }
   }
 `;
 
-export const Buttons = styled.div`
+export const DownloadCard = styled.div`
+  flex: 1;
+  max-width: 320px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  text-align: center;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center; 
+`;
+
+export const DownloadText = styled.p`
+  font-size: 1rem;
+  margin-bottom: 16px;
+  color: #000;
+`;
+
+export const DownloadButton = styled(Link)`
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 8px;
+  background-color: #001f5c;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s;
+  width: max-content; // 
 
-  a {
-    background-color: #362f8f;
-    color: white;
-    padding: 12px 18px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-    white-space: nowrap;
-
-    &:hover {
-      background-color: #2c2675;
-    }
-  }
-
-  @media (max-width: 400px) {
-    a {
-      width: 100%;
-    }
+  &:hover {
+    background-color: #000e36;
   }
 `;
+

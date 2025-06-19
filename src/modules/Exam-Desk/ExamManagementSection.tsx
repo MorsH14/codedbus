@@ -1,6 +1,8 @@
 "use client"
 
 import styled from '@emotion/styled';
+import FAQ from './faq';
+import CodedbusVideo from './videoSection';
 
 
 const Container = styled.div`
@@ -39,6 +41,10 @@ const BoxContainer = styled.div`
   margin: 2rem auto;
   flex-wrap: wrap;
 `;
+const YoutubeSection = styled.div`
+  width: 100%;
+  height: 100px;
+`;
 
 const Box = styled.div`
   background-color: #f5f5f5;
@@ -70,7 +76,13 @@ const TableSection = styled.div`
   background-color: #f5f5f5;
   padding: 2rem;
   margin-top: 50px;
+  /* overflow-x: auto; */
+
+  @media screen and (max-width: 415px) {
+      padding: 5px;
+  }
 `;
+
 
 const TableTitle = styled.h2`
   font-size: 2rem;
@@ -82,6 +94,11 @@ const TableTitle = styled.h2`
 const Table = styled.table`
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
+
+  @media screen and (max-width: 415px) {
+    font-size: 0.85rem;
+  }
 `;
 
 const Th = styled.th`
@@ -89,17 +106,19 @@ const Th = styled.th`
   padding: 1rem;
   border: 2px solid #ddd;
   background-color: #e5e5e5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  vertical-align: top;
 `;
 
 const Td = styled.td`
   padding: 1rem;
   border: 2px solid #ddd;
   background-color: #fff;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  vertical-align: top;
 `;
-const FaqSection = styled.div`
-  margin-top: 4rem;
-`;
-
 
 export default function ExamManagementSection() {
   return (
@@ -114,12 +133,16 @@ export default function ExamManagementSection() {
           The software can be downloaded by examiners and their examination candidates.
         </p>
       </TextSection>
-
+      <CodedbusVideo/>
       <BoxContainer>
         <Box><GreenText>Create Examination</GreenText></Box>
         <Box><YellowText>Conduct Examination</YellowText></Box>
         <Box><BlueText>Manage Examination</BlueText></Box>
       </BoxContainer>
+
+      <YoutubeSection>
+
+      </YoutubeSection>
 
       <TableSection>
         <TableTitle>System Requirements</TableTitle>
@@ -161,9 +184,7 @@ export default function ExamManagementSection() {
         </Table>
       </TableSection>
 
-      <FaqSection>
-        <TableTitle>Frequently Asked Question(FAQ)</TableTitle>
-      </FaqSection>
+      <FAQ/>
     </Container>
   );
 }

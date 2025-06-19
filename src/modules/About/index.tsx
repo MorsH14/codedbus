@@ -2,8 +2,8 @@
 
 import styled from '@emotion/styled';
 import Image from 'next/image';
-import CodedBusImage from '../../../public/assets/IMG_1.png'; 
-import WaveImage from '../../../public/assets/IMG_2.png'; 
+import CodedBusImage from '../../../public/assets/IMG_1.jpg'; 
+import WaveImage from '../../../public/assets/2.jpg'; 
 import LinkButton from '@/components/Button/Button';
 
 const Container = styled.div`
@@ -80,7 +80,7 @@ const WelcomeSection = styled.div`
 `;
 
 const JourneySection = styled.div`
-  background-image: url("/assets/IMG_3.png");
+  background-image: url("/assets/3.jpg");
   color: #fff;
   padding: 4rem 2rem;
   text-align: center;

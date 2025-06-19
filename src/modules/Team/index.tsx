@@ -65,7 +65,7 @@ export default function Team() {
       </TextSection>
 
       <ImageSection>
-        <Image src="/assets/IMG_4.png" alt="Coded Bus Download" width={700} height={400} style={{ width: '100%', height: 'auto' }} />
+        <Image src="/assets/4.jpg" alt="Coded Bus Download" width={700} height={400} style={{ width: '100%', height: 'auto' }} />
       </ImageSection>
     </Container>
     <TeamInfo/>

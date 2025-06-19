@@ -2,7 +2,7 @@
 
 import styled from '@emotion/styled';
 import Image from 'next/image';
-import CodedBusImage from '../../../public/assets/IMG_5.png'; 
+import CodedBusImage from '../../../public/assets/5.jpg'; 
 
 
 const Container = styled.div`

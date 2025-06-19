@@ -51,8 +51,33 @@ export const AboardWrapper = styled.div`
   display: grid;
   grid-template-columns: 40% 60%;
   height: auto;
-  margin-bottom: 100px;
+  width: 90%;
+  margin: 0 auto 100px auto;  /* ✅ Center horizontally */
+  align-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 20px;
+
+  }
 `;
+
+export const SupportWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: auto;
+  width: 90%;
+  margin: 0 auto 100px auto; /* ✅ Center horizontally */
+  align-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 20px;
+  }
+`;
+
 export const TextAboardWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -97,7 +122,7 @@ export const AboardBtnWrapper = styled.div`
 
 export const Header = styled.div`
   font-weight: 900;
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 20px;
 
 

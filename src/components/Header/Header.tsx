@@ -29,7 +29,7 @@ export default function Header() {
   return (
     <HeaderWrapper>
       <Link href="/">
-        <Image src="/assets/header.png" alt="logo" width={100} height={50} />
+        <Image src="/assets/header.jpg" alt="logo" width={100} height={50} />
       </Link>
 
       <MobileMenuIcon onClick={toggleMenu}>
@@ -48,7 +48,7 @@ export default function Header() {
             isActive = ['/about', '/team'].includes(currentPath);
           }
           if (link.href === '/support') {
-            isActive = ['/support', '/contact'].includes(currentPath);
+            isActive = ['/support', '/contact', '/refund', '/privacy', '/terms'].includes(currentPath);
           }
 
           return (

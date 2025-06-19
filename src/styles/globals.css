@@ -5,8 +5,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background:  white;
-    --foreground: #0a0a0a;
+    --background:  #FFFFFF ;
+    --foreground: #000000 ;
   }
 }
 

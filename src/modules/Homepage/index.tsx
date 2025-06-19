@@ -7,6 +7,7 @@ import {
   HomePageWrapper,
   ImageAboardWrapper,
   LearnBtnWrapper,
+  SupportWrapper,
   TextAboardWrapper
 } from './Home.styles';
 import Image from 'next/image';
@@ -39,7 +40,7 @@ export default function Homepage() {
 
         <ImageAboardWrapper>
           <Image
-            src="/assets/IMG_1.png"
+            src="/assets/IMG_1.jpg"
             alt="logo"
             width={1200}
             height={300}
@@ -47,18 +48,30 @@ export default function Homepage() {
           />
         </ImageAboardWrapper>
       </AboardWrapper>
+      <SupportWrapper>
 
-      <Box
+        <ImageAboardWrapper>
+          <Image
+            src="/assets/wave.jpg"
+            alt="logo"
+            width={1200}
+            height={300}
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </ImageAboardWrapper>
+
+        <Box
         sx={{
           width: '100%',
           display: 'flex',
           justifyContent: 'center',
-          alignItems: 'center'
+          alignItems: 'center',
+          flexDirection: 'column'
         }}
       >
-        <Header>{"Need Help? We've Got You Covered"}</Header>
-      </Box>
-
+        <Header>{"Need Help?"}</Header>
+        <Header>{" We've Got You Covered"}</Header>
+        
       <Box
         my={'20px'}
         sx={{
@@ -70,6 +83,8 @@ export default function Homepage() {
       >
         <LinkButton label="View Our Support" href="/support" />
       </Box>
+      </Box>
+      </SupportWrapper>
     </>
   );
 }
