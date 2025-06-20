@@ -51,18 +51,6 @@ const TextSection = styled.div`
   }
 `;
 
-const BorderLine = styled.div`
-  width: 926px;
-  height: 54.55px;
-  background-color: #000624;
-  position: absolute;
-  bottom: 240px;
-  left: 0;
-
-   @media screen and (max-width: 1496px) {
-    display: none;
-  }
-`
 
 const ImageSection = styled.div`
   max-width: 700px;
@@ -121,7 +109,6 @@ export default function AboutSection() {
         <TextSection>
           <h1>{`Hello! We're glad you're riding with us.`}</h1>
           <p>Our goal is to visualize and accomplish.</p>
-          <BorderLine/>
         </TextSection>
 
         <ImageSection>
