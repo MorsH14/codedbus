@@ -83,10 +83,18 @@ const FAQData = [
     question: 'Does Exam Desk expire?',
     answer: 'Yes, and users will be required to download new versions when updates are available.',
   },
-  {
-    question: 'Is there technical support available for Exam Desk users?',
-    answer: 'Yes, through email, live chat, and a dedicated help center.',
-  },
+{
+  question: 'Is there technical support available for Exam Desk users?',
+  answer: (
+    <>
+      Yes, through email, live chat, and a dedicated help center.{' '}
+      <a href="/contact" style={{ color: 'blue' }}>
+        Visit the support page
+      </a>.
+    </>
+  )
+}
+
 ];
 
 // Main component

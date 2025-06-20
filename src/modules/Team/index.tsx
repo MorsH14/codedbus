@@ -36,7 +36,7 @@ const TextSection = styled.div`
 
   p {
     font-size: 26px;
-    color: #333;
+    color: #000000;
   }
    @media screen and (max-width: 646px) {
     display: flex;

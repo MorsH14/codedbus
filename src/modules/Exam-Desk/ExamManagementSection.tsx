@@ -16,13 +16,13 @@ const Container = styled.div`
 `;
 
 const TextSection = styled.div`
-  max-width: 80%;
+  max-width: 90%;
   text-align: center;
 
   h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #392c88;
+    color: #001A59;
     margin-bottom: 1rem;
   }
 
@@ -41,13 +41,15 @@ const BoxContainer = styled.div`
   margin: 2rem auto;
   flex-wrap: wrap;
 `;
-const YoutubeSection = styled.div`
-  width: 100%;
-  height: 100px;
-`;
 
-const Box = styled.div`
-  background-color: #f5f5f5;
+
+interface BoxBackground {
+  bgColor: string;
+}
+
+const Box = styled.div<BoxBackground>`
+  background-color: ${({ bgColor }) => bgColor};
+  color: #FFFFFF;
   width: 250px;
   height: 200px;
   display: flex;
@@ -59,17 +61,6 @@ const Box = styled.div`
   border-radius: 10px;
 `;
 
-const GreenText = styled.span`
-  color: #00a651;
-`;
-
-const YellowText = styled.span`
-  color: #dddd55;
-`;
-
-const BlueText = styled.span`
-  color: #392c88;
-`;
 
 const TableSection = styled.div`
   width: 100%;
@@ -86,7 +77,7 @@ const TableSection = styled.div`
 
 const TableTitle = styled.h2`
   font-size: 2rem;
-  color: #392c88;
+  color: #001A59;
   margin-bottom: 1rem;
   text-align: center;
 `;
@@ -133,17 +124,13 @@ export default function ExamManagementSection() {
           The software can be downloaded by examiners and their examination candidates.
         </p>
       </TextSection>
-      <CodedbusVideo/>
       <BoxContainer>
-        <Box><GreenText>Create Examination</GreenText></Box>
-        <Box><YellowText>Conduct Examination</YellowText></Box>
-        <Box><BlueText>Manage Examination</BlueText></Box>
+        <Box bgColor='#0D6335'><>Create Examination</></Box>
+        <Box bgColor='#A17B0A'><>Conduct Examination</></Box>
+        <Box bgColor='#001A59'><>Manage Examination</></Box>
+        <Box bgColor='#3498DB'><>Take Exam</></Box>
       </BoxContainer>
-
-      <YoutubeSection>
-
-      </YoutubeSection>
-
+            <CodedbusVideo />
       <TableSection>
         <TableTitle>System Requirements</TableTitle>
         <Table>
@@ -184,7 +171,7 @@ export default function ExamManagementSection() {
         </Table>
       </TableSection>
 
-      <FAQ/>
+      <FAQ />
     </Container>
   );
 }

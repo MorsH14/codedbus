@@ -17,12 +17,11 @@ const SupportPage = () => {
       <Typography variant="h4" fontWeight="bold" align="center" gutterBottom>
         Support Page
       </Typography>
-      <Typography mb={'50px'} variant="subtitle1" align="center" gutterBottom>
+      <Typography mb={'30px'} variant="subtitle1" align="center" gutterBottom>
         Select a product you need assistance with to get started.
       </Typography>
 
-      {/* Replacing Grid with Flexbox */}
-      <Box
+\      <Box
         sx={{
           display: 'flex',
           flexWrap: 'wrap',
@@ -42,7 +41,7 @@ const SupportPage = () => {
           >
             <Card
               sx={{
-                border: '2px solid #2E2A7B',
+                border: '2px solid #001A59',
                 textAlign: 'center',
                 p: 2,
                 '&:hover': {
@@ -50,7 +49,8 @@ const SupportPage = () => {
                 },
               }}
             >
-              <CardContent>
+              <a href="/contact">
+                <CardContent style={{cursor: 'pointer'}}>
                 <Box
                   component="img"
                   src="/assets/table.jpg"
@@ -61,6 +61,7 @@ const SupportPage = () => {
                   {label}
                 </Typography>
               </CardContent>
+              </a>
             </Card>
           </Box>
         ))}
@@ -70,7 +71,7 @@ const SupportPage = () => {
       <Box
         sx={{
           width: '100%',
-          background: '#2e2373',
+          background: '#001A59',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',

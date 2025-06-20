@@ -18,7 +18,7 @@ const StyledLink = styled.a<{ width?: string; bgColor?: string; textColor?: stri
   color: ${({ textColor }) => textColor || 'white'};
   font-weight: bold;
   text-align: center;
-  padding: 12px 24px;
+  padding: 16px 24px;
   width: ${({ width }) => width || '100%'};
   text-decoration: none;
   border-radius: 4px;

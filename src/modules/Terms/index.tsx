@@ -91,7 +91,7 @@ export default function TermsOfServicePage() {
       <p>
         You may not transmit unlawful, obscene, defamatory, or otherwise prohibited materials to this site. Codedbus assumes no liability for such communications if they occur.
       </p>
-      <p>For refund-related matters, please refer to our Refund and Return Policy.</p>
+      <p>For refund-related matters, please refer to our  <a style={{ color: 'blue'}} href="/refund">Refund and Return Policy</a>.</p>
 
       <h2>Linking to This Website</h2>
       <p>You may link to Codedbus&rsquo;s website provided that:</p>

@@ -18,8 +18,8 @@ export const HomePageWrapper = styled.div`
 export const LearnBtnWrapper = styled.div`
  position: absolute;
  bottom: 50px;
- left: 100px;
- width: 300px;
+ left: 80px;
+ width: 400px;
  margin: 0 auto;
 
  @media screen and (max-width: 1115px){
@@ -52,7 +52,7 @@ export const AboardWrapper = styled.div`
   grid-template-columns: 40% 60%;
   height: auto;
   width: 90%;
-  margin: 0 auto 100px auto;  /* ✅ Center horizontally */
+  margin: 0 auto; 
   align-items: center;
 
   @media (max-width: 768px) {
@@ -68,7 +68,7 @@ export const SupportWrapper = styled.div`
   grid-template-columns: 50% 50%;
   height: auto;
   width: 90%;
-  margin: 0 auto 100px auto; /* ✅ Center horizontally */
+  margin: 0 auto 100px auto; 
   align-items: center;
 
   @media (max-width: 768px) {

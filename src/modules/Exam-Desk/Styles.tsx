@@ -13,7 +13,7 @@ export const Section = styled.section`
 export const Heading = styled.h1`
   font-size: 2rem;
   font-weight: 700;
-  color: #000;
+  color: #001A59;
   margin-bottom: 30px;
 
   @media (min-width: 768px) {
@@ -34,6 +34,8 @@ export const CenteredImage = styled.div`
 
 export const ButtonRow = styled.div`
   display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   flex-direction: column;
   gap: 30px;
 
@@ -60,7 +62,7 @@ export const DownloadCard = styled.div`
 export const DownloadText = styled.p`
   font-size: 1rem;
   margin-bottom: 16px;
-  color: #000;
+  color: #001A59;
 `;
 
 export const DownloadButton = styled(Link)`

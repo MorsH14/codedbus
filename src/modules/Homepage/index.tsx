@@ -44,7 +44,7 @@ export default function Homepage() {
             alt="logo"
             width={1200}
             height={300}
-            style={{ width: '100%', height: 'auto' }}
+            style={{ width: '600px', height: '400px' }}
           />
         </ImageAboardWrapper>
       </AboardWrapper>
@@ -56,7 +56,7 @@ export default function Homepage() {
             alt="logo"
             width={1200}
             height={300}
-            style={{ width: '100%', height: 'auto' }}
+             style={{ width: '600px', height: '400px' }}
           />
         </ImageAboardWrapper>
 

@@ -77,7 +77,7 @@ export default function RefundPolicy() {
 
       <h2>Contact Us</h2>
       <p>
-        Questions? Reach out for support to <a href="mailto:support@codedbus.com">support@codedbus.com</a>.
+        Questions? Reach out for <a style={{ color: 'blue'}} href="/contact">support</a>.
       </p>
     </RefundContainer>
   );

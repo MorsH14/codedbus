@@ -33,7 +33,7 @@ const contactItems: ContactItem[] = [
     description: 'Send us a support ticket and get a response within 24 hours',
     action: 'Submit a ticket',
     href: '/submit-request',
-    iconColor: '#2E2A7B',
+    iconColor: '#001A59',
   },
   {
     icon: FaWhatsapp,
@@ -57,7 +57,7 @@ const contactItems: ContactItem[] = [
     description: '+2349167989433',
     action: 'Give us a call',
     href: 'tel:+2349167989433',
-    iconColor: '#2E2A7B',
+    iconColor: '#001A59',
   },
   {
     icon: FaMapMarkerAlt,
@@ -65,7 +65,7 @@ const contactItems: ContactItem[] = [
     description: 'No. 27 Abolakale Street, Opp. IAC, Ilorin, Kwara State, Nigeria.',
     action: 'Locate us',
     href: 'https://maps.google.com?q=27+Abolakale+Street,+Ilorin+Nigeria',
-    iconColor: '#2E2A7B',
+    iconColor: '#001A59',
   },
 ];
 
@@ -102,7 +102,7 @@ const Contact = () => {
               <Wrapper {...linkProps} style={{ textDecoration: 'none' }}>
                 <Card
                   sx={{
-                    border: '1.5px solid #2E2A7B',
+                    border: '1.5px solid #001A59',
                     textAlign: 'center',
                     height: '100%',
                     display: 'flex',
@@ -117,7 +117,7 @@ const Contact = () => {
                 >
                   <CardContent>
                     <Box sx={{ mb: 2 }}>
-                      <Icon size={50} color={item.iconColor || '#2E2A7B'} />
+                      <Icon size={50} color={item.iconColor || '#001A59'} />
                     </Box>
                     <Typography variant="subtitle1" fontWeight="bold" gutterBottom>
                       {item.title}
@@ -126,7 +126,7 @@ const Contact = () => {
                       {item.description}
                     </Typography>
                     <Typography
-                      sx={{ color: '#2E2A7B', fontWeight: 600, fontSize: 14 }}
+                      sx={{ color: '#001A59', fontWeight: 600, fontSize: 14 }}
                     >
                       {item.action}
                     </Typography>

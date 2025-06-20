@@ -54,12 +54,12 @@ export const NavLink = styled.a<NavLinkProps>`
   text-decoration: none;
   color: black;
   padding-bottom: 30px;
-  border-bottom: ${({ isActive }) => (isActive ? '3px solid #362f8f' : 'none')};
+  border-bottom: ${({ isActive }) => (isActive ? '3px solid #001A59' : 'none')};
   font-weight: ${({ isActive }) => (isActive ? 'bold' : 'normal')};
   transition: border-bottom 0.2s;
 
   &:hover {
-    border-bottom: 2px solid #362f8f;
+    border-bottom: 2px solid #001A59;
   }
 
    @media (max-width: 768px) {

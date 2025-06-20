@@ -11,7 +11,7 @@ const FormWrapper = styled.div`
   max-width: 90%;
   margin: 40px auto;
   padding: 40px;
-  border: 1px solid #2e2676;
+  border: 1px solid #001A59;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -19,7 +19,7 @@ const FormWrapper = styled.div`
 `;
 
 const Title = styled.h1`
-  color: #2e2676;
+  color: #001A59;
   font-weight: 800;
   margin-bottom: 30px;
   text-align: center;
@@ -30,7 +30,7 @@ const Input = styled.input`
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
-  border: 1px solid #2e2676;
+  border: 1px solid #001A59;
   background: #ddd;
   font-size: 16px;
   color: black;
@@ -40,7 +40,7 @@ const Select = styled.select`
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
-  border: 1px solid #2e2676;
+  border: 1px solid #001A59;
   background: #ddd;
   font-size: 16px;
   color: black;
@@ -51,7 +51,7 @@ const TextArea = styled.textarea`
   padding: 12px;
   height: 150px;
   margin-bottom: 10px;
-  border: 1px solid #2e2676;
+  border: 1px solid #001A59;
   background: #ddd;
   font-size: 16px;
   resize: vertical;
@@ -68,7 +68,7 @@ const SubmitButton = styled.button`
   width: 100%;
   padding: 14px;
   font-size: 18px;
-  background-color: #2e2676;
+  background-color: #001A59;
   color: white;
   border: none;
   cursor: pointer;

@@ -18,6 +18,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* position: relative; */
   }
 `;
 
@@ -50,6 +51,19 @@ const TextSection = styled.div`
   }
 `;
 
+const BorderLine = styled.div`
+  width: 926px;
+  height: 54.55px;
+  background-color: #000624;
+  position: absolute;
+  bottom: 240px;
+  left: 0;
+
+   @media screen and (max-width: 1496px) {
+    display: none;
+  }
+`
+
 const ImageSection = styled.div`
   max-width: 700px;
   width: 100%;
@@ -64,6 +78,7 @@ const WelcomeSection = styled.div`
   background-color: #fff;
   text-align: center;
   padding: 4rem 2rem;
+  
 
   h1 {
     font-size: 2.5rem;
@@ -74,7 +89,7 @@ const WelcomeSection = styled.div`
   p {
     font-size: 1.2rem;
     line-height: 1.6;
-    max-width: 900px;
+    max-width: 90%;
     margin: 0 auto 1rem;
   }
 `;
@@ -106,10 +121,11 @@ export default function AboutSection() {
         <TextSection>
           <h1>{`Hello! We're glad you're riding with us.`}</h1>
           <p>Our goal is to visualize and accomplish.</p>
+          <BorderLine/>
         </TextSection>
 
         <ImageSection>
-          <Image src={CodedBusImage} alt="Coded Bus Download" layout="responsive" />
+          <Image src={CodedBusImage} alt="Coded Bus Download" layout="responsive" style={{width: '600px', height: '400px'}}/>
         </ImageSection>
       </Container>
 
@@ -134,7 +150,7 @@ export default function AboutSection() {
         </TextSection>
 
         <ImageSection>
-          <Image src={WaveImage} alt="Coded Bus Download" layout="responsive" />
+          <Image src={WaveImage} alt="Coded Bus Download" layout="responsive" style={{width: '600px', height: '400px'}}/>
         </ImageSection>
       </Container>
     </>

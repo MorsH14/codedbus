@@ -29,7 +29,7 @@ const teamMembers: TeamMember[] = [
 
 const TeamSection: React.FC = () => {
   return (
-    <Box sx={{ backgroundColor: '#2E2A7B', py: 8, px: 2 }}>
+    <Box sx={{ backgroundColor: '#001A59', py: 8, px: 2 }}>
       <Box
         sx={{
           display: 'flex',
@@ -74,7 +74,7 @@ const TeamSection: React.FC = () => {
               <Typography fontWeight="bold" gutterBottom>
                 {member.name}
               </Typography>
-              <Typography color="#2E2A7B" fontWeight="bold">
+              <Typography color="#001A59" fontWeight="bold">
                 {member.role}
               </Typography>
             </Paper>
