@@ -66,7 +66,6 @@ const TableSection = styled.div`
   width: 100%;
   background-color: #f5f5f5;
   padding: 2rem;
-  margin-top: 50px;
   /* overflow-x: auto; */
 
   @media screen and (max-width: 415px) {

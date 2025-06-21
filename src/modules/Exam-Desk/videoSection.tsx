@@ -13,19 +13,19 @@ const VideoWrapper = styled.div`
     width: 95%;
   }
 `;
-
 const Iframe = styled.iframe`
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 60%;
+  height: 100%; /* FIXED: Fill the padding-created space */
   border: none;
 
   @media screen and (max-width: 700px){
-    height: auto;
+    height: 100%; /* Still 100% for responsiveness */
   }
 `;
+
 
 export default function CodedbusVideo() {
   return (
