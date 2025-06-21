@@ -116,7 +116,7 @@ export default function PrivacyPolicy() {
       </p>
       <h2>Contact Us</h2>
       <p>
-        If you have any questions about this Privacy Policy, please contact us at <a style={{color: 'blue'}} href="/contact">contact@codedbus.com</a>.
+        If you have any questions about this Privacy Policy, please  <a style={{color: 'blue'}} href="/contact">contact us </a>.
       </p>
     </PrivacyContainer>
   );

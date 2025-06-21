@@ -50,19 +50,29 @@ export default function Footer() {
 
       <Column>
         <FooterTitle>Our Products</FooterTitle>
+        <FooterText>
         <Link href="/exam-desk">Exam Desk</Link>
+        </FooterText>
       </Column>
 
       <Column>
         <FooterTitle>Company</FooterTitle>
+        <FooterText>
         <Link href="/about">About Codedbus Information Technology Limited</Link>
+        </FooterText>
+        <FooterText>
         <Link href="/team">Meet Our Team</Link>
+        </FooterText>
       </Column>
 
       <Column>
         <FooterTitle>Support</FooterTitle>
+        <FooterText>
         <Link href="/support">Product Support</Link>
+        </FooterText>
+         <FooterText>
         <Link href="/contact">Contact Us</Link>
+        </FooterText>
       </Column>
     </FooterWrapper>
   );

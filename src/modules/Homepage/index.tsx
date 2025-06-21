@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import {
   AboardBtnWrapper,
@@ -11,25 +13,37 @@ import {
   TextAboardWrapper
 } from './Home.styles';
 import Image from 'next/image';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import LinkButton from '@/components/Button/Button';
 
 export default function Homepage() {
   return (
     <>
+      {/* Top section with text and table image */}
       <HomePageWrapper>
-        <Image
-          src="/assets/tableText.jpg"
-          alt="logo"
-          width={1200} // natural width of the image
-          height={400} // natural height
-          style={{ width: '100%', height: 'auto' }} // makes it responsive
-        />
-        <LearnBtnWrapper>
-          <LinkButton label="Learn More" href="/exam-desk" />
-        </LearnBtnWrapper>
+        <TextAboardWrapper>
+          <Typography sx={{color: '#000000', fontSize: '56px'}}>
+            Simple <br />
+            Examination <br />
+            Management <br />
+            Software
+          </Typography>
+          <LearnBtnWrapper>
+            <LinkButton label="Learn More" href="/exam-desk" />
+          </LearnBtnWrapper>
+        </TextAboardWrapper>
+
+        <ImageAboardWrapper>
+          <Image
+            src="/assets/table.jpg" // Make sure this path matches your public folder
+            alt="Exam Desk Illustration"
+            width={600}
+            height={400}
+          />
+        </ImageAboardWrapper>
       </HomePageWrapper>
 
+      {/* Team section */}
       <AboardWrapper>
         <TextAboardWrapper>
           <HeaderResize>ALL Aboard!</HeaderResize>
@@ -44,47 +58,41 @@ export default function Homepage() {
             alt="logo"
             width={1200}
             height={300}
-            style={{ width: '600px', height: '400px' }}
+            style={{ width: '100%', height: 'auto', maxWidth: '600px' }}
           />
         </ImageAboardWrapper>
       </AboardWrapper>
+
+      {/* Support section */}
       <SupportWrapper>
+  <ImageAboardWrapper>
+    <Image
+      src="/assets/wave.jpg"
+      alt="logo"
+      width={1200}
+      height={300}
+      style={{ width: '100%', height: 'auto', maxWidth: '600px' }}
+    />
+  </ImageAboardWrapper>
 
-        <ImageAboardWrapper>
-          <Image
-            src="/assets/wave.jpg"
-            alt="logo"
-            width={1200}
-            height={300}
-             style={{ width: '600px', height: '400px' }}
-          />
-        </ImageAboardWrapper>
+  <TextAboardWrapper>
+    <Header>Need Help?</Header>
+    <Header>We&apos;ve Got You Covered</Header>
 
-        <Box
-        sx={{
-          width: '100%',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexDirection: 'column'
-        }}
-      >
-        <Header>{"Need Help?"}</Header>
-        <Header>{" We've Got You Covered"}</Header>
-        
-      <Box
-        my={'20px'}
-        sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          width: '100%'
-        }}
-      >
-        <LinkButton label="View Our Support" href="/support" />
-      </Box>
-      </Box>
-      </SupportWrapper>
+    <Box
+      my={'20px'}
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '100%'
+      }}
+    >
+      <LinkButton label="View Our Support" href="/support" />
+    </Box>
+  </TextAboardWrapper>
+</SupportWrapper>
+
     </>
   );
 }

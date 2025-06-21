@@ -27,11 +27,6 @@ const StyledLink = styled.a<{ width?: string; bgColor?: string; textColor?: stri
   &:hover {
     filter: brightness(0.9);
   }
-
-  @media screen and (max-width: 413px) {
-    padding: 7px 10px;
-    font-size: 10px;
-  }
 `
 
 

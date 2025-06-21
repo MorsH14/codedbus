@@ -83,7 +83,7 @@ const SupportPage = () => {
         <h1 style={{ color: 'white', marginBottom: '40px' }}>
           Have a message for us?
         </h1>
-        <LinkButton label="Contact Us" href="/contact" bgColor="white" textColor="#3b2d93" />
+        <LinkButton label="Contact Us" href="/contact" bgColor="white" textColor="#001A59" />
       </Box>
     </Box>
   );

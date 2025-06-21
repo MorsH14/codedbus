@@ -83,6 +83,10 @@ const FAQData = [
     question: 'Does Exam Desk expire?',
     answer: 'Yes, and users will be required to download new versions when updates are available.',
   },
+  {
+    question: 'Is Exam Desk a proctoring app?',
+    answer: 'No, Exam Desk is not a proctoring app. Instead, trained examiners will supervise the examination in a controlled environment with suitable computers and stable internet connections for exam takers.',
+  },
 {
   question: 'Is there technical support available for Exam Desk users?',
   answer: (
