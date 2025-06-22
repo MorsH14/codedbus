@@ -8,6 +8,9 @@ import { Box } from "@mui/material";
 export const metadata: Metadata = {
   title: "CodedBus",
   description: "CoodedBus",
+  icons: {
+    icon: "/assets/header.jpg", 
+  },
 };
 
 export default function RootLayout({
@@ -19,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
-        <Box pt={'80px'}> {children}</Box>
+        <Box pt={"80px"}>{children}</Box>
         <BackToTopButton />
         <Footer />
       </body>

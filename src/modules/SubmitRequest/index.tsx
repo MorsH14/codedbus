@@ -34,6 +34,7 @@ const Input = styled.input`
   background: #ddd;
   font-size: 16px;
   color: black;
+  outline: #001A59;
 `;
 
 const Select = styled.select`
@@ -44,6 +45,7 @@ const Select = styled.select`
   background: #ddd;
   font-size: 16px;
   color: black;
+  outline: #001A59;
 `;
 
 const TextArea = styled.textarea`
