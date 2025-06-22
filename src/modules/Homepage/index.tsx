@@ -14,7 +14,7 @@ import {
   TextAboardWrapper
 } from './Home.styles';
 import Image from 'next/image';
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import LinkButton from '@/components/Button/Button';
 
 export default function Homepage() {
@@ -36,7 +36,7 @@ export default function Homepage() {
 
         <ImageAboardWrapper>
           <Image
-            src="/assets/table.jpg" // Make sure this path matches your public folder
+            src="/assets/table.jpg" 
             alt="Exam Desk Illustration"
             width={600}
             height={400}
@@ -44,7 +44,6 @@ export default function Homepage() {
         </ImageAboardWrapper>
       </HomePageWrapper>
 
-      {/* Team section */}
       <AboardWrapper>
         <TextAboardWrapper>
           <HeaderResize>ALL Aboard!</HeaderResize>
