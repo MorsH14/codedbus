@@ -5,9 +5,8 @@ import styled from "@emotion/styled";
 const VideoWrapper = styled.div`
   position: relative;
   width: 70%;
-  /* max-width: 900px; */
   margin: 4rem auto;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 56.25%; 
 
   @media screen and (max-width: 700px){
     width: 95%;
@@ -18,11 +17,11 @@ const Iframe = styled.iframe`
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; /* FIXED: Fill the padding-created space */
+  height: 100%; 
   border: none;
 
   @media screen and (max-width: 700px){
-    height: 100%; /* Still 100% for responsiveness */
+    height: 100%;
   }
 `;
 

@@ -39,11 +39,9 @@ export const ButtonRow = styled.div`
   flex-direction: column;
   gap: 30px;
 
-  @media (min-width: 768px) {
-    flex-direction: row;
+  @media screen and (max-width: 768px) {
     justify-content: center;
-    gap: 330px;
-
+    align-items: center;
   }
 `;
 

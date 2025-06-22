@@ -21,7 +21,7 @@ const SupportPage = () => {
         Select a product you need assistance with to get started.
       </Typography>
 
-\      <Box
+      <Box
         sx={{
           display: 'flex',
           flexWrap: 'wrap',

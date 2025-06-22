@@ -8,16 +8,29 @@ export const HomePageWrapper = styled.div`
   align-items: center;
   margin-top: 100px;
 
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     text-align: center;
     gap: 20px;
   }
 `;
 
+export const MainHeadder = styled.div`
+  color: #000000;
+  font-size: 56px;
+
+ @media screen and (max-width: 768px) {
+    font-size: 46px;
+    margin-bottom: 20px;
+  }
+`;
 export const LearnBtnWrapper = styled.div`
   width: 350px;
   margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    width: 250px;
+  }
 `;
 
 export const AboardWrapper = styled.div`
@@ -82,6 +95,10 @@ export const HeaderResize = styled.div`
   font-size: 50px;
   margin-bottom: 20px;
   margin-top: 10%;
+
+  @media screen and (max-width: 700px) {
+      margin-top: 0;
+    }
 `;
 
 export const AboardBtnWrapper = styled.div`
