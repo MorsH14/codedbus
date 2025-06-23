@@ -88,7 +88,7 @@ export default function Homepage() {
               width: '100%'
             }}
           >
-            <LinkButton label="View Our Support" href="/support" />
+            <LinkButton label="Request Support" href="/support" />
           </Box>
         </TextAboardWrapper>
       </SupportWrapper>

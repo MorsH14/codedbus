@@ -62,9 +62,9 @@ const contactItems: ContactItem[] = [
   {
     icon: FaMapMarkerAlt,
     title: 'Locate Our Address',
-    description: 'No. 27 Abolakale Street, Opp. IAC, Ilorin, Kwara State, Nigeria.',
+    description: 'Ilorin, Kwara State, Nigeria.',
     action: 'Locate us',
-    href: 'https://maps.google.com?q=27+Abolakale+Street,+Ilorin+Nigeria',
+    href: 'https://maps.google.com?q=27+Ilorin+Nigeria',
     iconColor: '#001A59',
   },
 ];

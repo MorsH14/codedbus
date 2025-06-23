@@ -40,7 +40,7 @@ export default function RefundPolicy() {
   return (
     <RefundContainer>
       <h1>Codedbus - Refund &amp; Return Policy</h1>
-      <p><strong>Last Updated:</strong> 17th June, 2025</p>
+      <p><strong>Last Updated:</strong> 17th June, 2025.</p>
 
       <h2>Introduction</h2>
       <p>
@@ -58,7 +58,7 @@ export default function RefundPolicy() {
         <li>A recurring subscription is canceled within the first 7 days of the billing cycle (where applicable).</li>
       </ul>
       <p>
-        To request a refund, please email <a href="mailto:support@codedbus.com">support@codedbus.com</a> within 7 days of purchase. Be sure to include proof of payment and a description of the issue.
+        To request a refund, please email <a style={{ color: 'blue'}} href="mailto:support@codedbus.com">support@codedbus.com</a> within 7 days of purchase. Be sure to include proof of payment and a description of the issue.
       </p>
 
       <h2>Processing Refunds</h2>

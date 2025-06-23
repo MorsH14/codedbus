@@ -40,7 +40,7 @@ export default function TermsOfServicePage() {
   return (
     <TermsContainer>
       <h1>Codedbus - Terms of Service</h1>
-      <p><strong>Last updated:</strong> 17 June 2025</p>
+      <p><strong>Last updated:</strong> 17th June, 2025.</p>
 
       <h2>Acceptance of Terms</h2>
       <p>

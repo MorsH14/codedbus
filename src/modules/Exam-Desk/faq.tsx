@@ -85,7 +85,7 @@ const FAQData = [
   },
   {
     question: 'Is Exam Desk a proctoring app?',
-    answer: 'No, Exam Desk is not a proctoring app. Instead, trained examiners will supervise the examination in a controlled environment with suitable computers and stable internet connections for exam takers.',
+    answer: 'No, Exam Desk is not a proctoring app. Instead, trained examiners will supervise the examination in a controlled environment with suitable computers and stable internet connections for examination candidates.',
   },
 {
   question: 'Is there technical support available for Exam Desk users?',

@@ -35,13 +35,14 @@ export const CenteredImage = styled.div`
 export const ButtonRow = styled.div`
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
   flex-direction: column;
   gap: 30px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    flex-direction: row;
   }
 `;
 
