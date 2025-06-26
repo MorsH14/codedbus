@@ -49,9 +49,9 @@ export const AboardWrapper = styled.div`
 `;
 export const SupportWrapper = styled.div`
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
   height: auto;
-  width: 60%;
+  width: 70%;
   margin: 0 auto 100px auto;
   align-items: center;
 

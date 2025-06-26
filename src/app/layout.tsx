@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "../styles/globals.css";
-import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
+// import Header from "@/components/Header/Header";
+// import Footer from "@/components/Footer/Footer";
 import BackToTopButton from "@/components/Button/Backtotop";
 import { Box } from "@mui/material";
 
@@ -21,10 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
+        {/* <Header /> */}
         <Box pt={"80px"}>{children}</Box>
         <BackToTopButton />
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
