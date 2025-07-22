@@ -18,12 +18,12 @@ const teamMembers: TeamMember[] = [
   {
     name: 'Amidat, ALEGE',
     role: 'UI Designer',
-    image: '/assets/teamLead.jpg',
+    image: '/assets/medat.jpg',
   },
   {
-    name: 'Bashirun, Muhideen',
+    name: 'Olamide, Alade',
     role: 'Website Designer',
-    image: '/assets/teamLead.jpg',
+    image: '/assets/morsh.png',
   },
 ];
 
