@@ -23,7 +23,7 @@ const teamMembers: TeamMember[] = [
   {
     name: 'Olamide, Alade',
     role: 'Website Designer',
-    image: '/assets/morsh.png',
+    image: '/assets/mm.png',
   },
 ];
 

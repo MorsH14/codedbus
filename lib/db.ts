@@ -1,13 +1,22 @@
 // lib/db.ts
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
-const MONGO_URI = process.env.MONGO_URI!;
+const MONGODB_URI = process.env.MONGODB_URI as string;
+
+if (!MONGODB_URI) {
+  throw new Error("Please define the MONGODB_URI environment variable");
+}
+
+let isConnected = false;
 
 const connectDB = async () => {
-  if (mongoose.connections[0].readyState) return;
+  if (isConnected) return;
 
   try {
-    await mongoose.connect(MONGO_URI);
+    await mongoose.connect(MONGODB_URI, {
+      dbName: "codedbus", 
+    });
+    isConnected = true;
     console.log("MongoDB connected");
   } catch (err) {
     console.error("MongoDB connection error", err);
