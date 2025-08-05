@@ -29,7 +29,7 @@ export default function SignupForm() {
       } else {
         setMessage(data.message || 'Signup failed');
       }
-    } catch (err) {
+    } catch {
       setMessage('An error occurred');
     } finally {
       setLoading(false);

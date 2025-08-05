@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+// import { useRouter, useSearchParams } from "next/navigation";
 
 export default function SignInPage() {
   const [email, setEmail] = useState("");
@@ -9,33 +9,33 @@ export default function SignInPage() {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  const router = useRouter();
-  const searchParams = useSearchParams();
-  const redirectPath = searchParams.get("redirect") || "/";
+  // const router = useRouter();
+  // const searchParams = useSearchParams();
+  // const redirectPath = searchParams.get("redirect") || "/";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
     setError("");
 
-    try {
-      const res = await fetch("/api/auth/signin", {
-        method: "POST",
-        body: JSON.stringify({ email, password }),
-        headers: { "Content-Type": "application/json" },
-      });
+    // try {
+    //   const res = await fetch("/api/auth/signin", {
+    //     method: "POST",
+    //     body: JSON.stringify({ email, password }),
+    //     headers: { "Content-Type": "application/json" },
+    //   });
 
-      if (res.ok) {
-        router.push(redirectPath);
-      } else {
-        const data = await res.json();
-        setError(data.message || "Login failed");
-      }
-    } catch (err) {
-      setError("Something went wrong");
-    } finally {
-      setIsLoading(false);
-    }
+    //   if (res.ok) {
+    //     router.push(redirectPath);
+    //   } else {
+    //     const data = await res.json();
+    //     setError(data.message || "Login failed");
+    //   }
+    // } catch {
+    //   setError("Something went wrong");
+    // } finally {
+    //   setIsLoading(false);
+    // }
   };
 
   return (
