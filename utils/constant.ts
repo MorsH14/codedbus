@@ -1,1 +1,1 @@
-const PROTECTED_ROUTES = ["/about", "/teams", "/exam-desk"] as const;
+const PROTECTED_ROUTES = ["/about", "/pricing","/teams", "/exam-desk"] as const;
