@@ -16,7 +16,6 @@ import { Box } from '@mui/material';
 
 const HeaderLink = [
   { label: 'Exam Desk', href: '/exam-desk' },
-  { label: 'Pricing', href: '/pricing' },
   { label: 'About Us', href: '/about' },
   { label: 'Support', href: '/support' },
 ];

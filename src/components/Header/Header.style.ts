@@ -11,7 +11,7 @@ export const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0 80px;
+  padding: 0 120px;
   background-color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 

@@ -125,7 +125,7 @@ export default function PricingSection() {
                   </CounterWrapper>
 
                   <span style={{ marginLeft: '8px' }}>
-                    &#8358;{CANDIDATE_PRICE.toLocaleString()}
+                    {CANDIDATE_PRICE.toLocaleString()}
                   </span>
                 </CalculatorRow>
 
@@ -176,7 +176,7 @@ export default function PricingSection() {
                   </CounterWrapper>
 
                   <span style={{ marginLeft: '8px' }}>
-                    &#8358;{MONTHLY_PRICE.toLocaleString()}
+                    {MONTHLY_PRICE.toLocaleString()}
                   </span>
                 </CalculatorRow>
                  <CalculatorRow>
@@ -223,7 +223,7 @@ export default function PricingSection() {
                   </CounterWrapper>
 
                   <span style={{ marginLeft: '8px' }}>
-                    &#8358;{ANNUAL_PRICE.toLocaleString()}
+                    {ANNUAL_PRICE.toLocaleString()}
                   </span>
                 </CalculatorRow>
                  <CalculatorRow>
